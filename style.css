@@ -2,7 +2,16 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 18px;
+    font-family: 'Mulish', sans-serif;
 }
+
+/* Custom Font Families:
+
+    font-family: 'Kenia', cursive;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+
+*/
 
 #top-nav-bar {
     width: 100%;
@@ -18,6 +27,7 @@ body {
 }
 .top-nav-bar-title {
     font-size: 27px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #top-info-card {
@@ -31,11 +41,13 @@ body {
     box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
 }
 .top-info-card-title {
-    font-size: 55px;
-    font-weight: bold;
+    font-size: 65px;
+    /* font-weight: bold; */
+    font-family: 'Kenia', cursive;
 }
 .top-info-card-description {
-    font-size: 21px;
+    font-size: 23px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .content-container {
@@ -99,8 +111,10 @@ body {
     border-radius: 8px;
     box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
     font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .page-footer {
     font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
 }
