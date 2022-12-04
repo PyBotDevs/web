@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+#top-nav-bar {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: rgb(160, 92, 224);
+    position: static;
+}
+#top-nav-bar label, #top-nav-bar button {
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+}
+.top-nav-bar-title {
+    font-size: 27px;
+}
+
+#top-info-card {
+    margin: 20px;
+    border-radius: 10px;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgb(160, 92, 224);
+    box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
+}
+.top-info-card-title {
+    font-size: 55px;
+    font-weight: bold;
+}
+.top-info-card-description {
+    font-size: 21px;
+}
+
+.content-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.info-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.info-section-heading {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#isobot-name-tag {
+    padding: 5px;
+    border-radius: 2.5px;
+    color: white;
+    background-color: rgb(160, 92, 224);
+    width: fit-content;
+    font-weight: bold;
+}
+#iso69-name-tag {
+    padding: 5px;
+    border-radius: 2.5px;
+    color: white;
+    background-color: rgb(0, 194, 97);
+    width: fit-content;
+    font-weight: bold;
+}
+#water-reminder-bot-name-tag {
+    padding: 5px;
+    border-radius: 2.5px;
+    color: white;
+    background-color: rgb(0, 192, 226);
+    width: fit-content;
+    font-weight: bold;
+}
+#isobot-name-tag:hover, #iso69-name-tag:hover, #water-reminder-bot-name-tag:hover {
+    cursor: pointer;
+}
+
+.user-pfp-favicon {
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: 1px 0 4px 2px rgb(199, 199, 199);
+}
+
+.text-info-box {
+    margin: 15px;
+    padding: 20px;
+    background-color: rgb(108, 51, 161);
+    border-color: rgb(132, 63, 196);
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
+    font-size: 16px;
+}
+
+.page-footer {
+    font-size: 14px;
+}
