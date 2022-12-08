@@ -28,6 +28,17 @@ body {
 .top-nav-bar-title {
     font-size: 27px;
     font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+.top-nav-bar-item {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+.top-nav-bar-item:hover {
+    color: rgb(160, 92, 224);
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #top-info-card {
