@@ -60,6 +60,26 @@ body {
     font-size: 23px;
     font-family: 'Roboto Mono', monospace;
 }
+#quick-action-button-row button {
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+}
+#quick-action-button-row button:hover {
+    cursor: pointer;
+    color: rgb(160, 92, 224);
+    background-color: white;
+    font-weight: bold;
+}
 
 .content-container {
     margin-left: 30px;
