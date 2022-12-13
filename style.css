@@ -146,7 +146,12 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
-.page-footer {
+#page-footer {
+    background-color: #232323;
+    color: white;
     font-size: 14px;
     font-family: 'Roboto Mono', monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
 }
