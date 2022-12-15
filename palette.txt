@@ -1,4 +1,4 @@
-NKA Colour Pallete
+NKA Colour Palette
 ----------------------------------
 Main Colour: rgb(160, 92, 224)
 Accent Colour: 
