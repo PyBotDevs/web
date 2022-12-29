@@ -164,3 +164,14 @@ body {
     margin-top: 5px;
     margin-left: 1px;
 }
+
+#social-media-links {
+    font-size: 26px;
+}
+#social-media-links i {
+    border-radius: 100%;
+    color: white;
+    background-color: #303030;
+    /* box-shadow: 1px 0 10px 1px rgb(199, 199, 199); */
+    padding: 15px;
+}
