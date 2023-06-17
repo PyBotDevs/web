@@ -1,177 +1,234 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/* General */
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 18px;
-    font-family: 'Mulish', sans-serif;
-}
-
-/* Custom Font Families:
-
-    font-family: 'Kenia', cursive;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-
-*/
-
-#top-nav-bar {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: black;
     color: white;
-    background-color: rgb(160, 92, 224);
-    position: static;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#top-nav-bar label, #top-nav-bar button {
-    margin-left: 17.5px;
-    margin-right: 17.5px;
-}
-.top-nav-bar-title {
-    font-size: 27px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-}
-.top-nav-bar-item {
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
-}
-.top-nav-bar-item:hover {
-    color: rgb(160, 92, 224);
-    background-color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#top-info-card {
-    margin: 20px;
-    border-radius: 10px;
-    width: 95%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-    background-color: rgb(160, 92, 224);
-    box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
-}
-.top-info-card-title {
-    font-size: 65px;
-    /* font-weight: bold; */
-    font-family: 'Kenia', cursive;
-}
-.top-info-card-description {
-    font-size: 23px;
-    font-family: 'Roboto Mono', monospace;
-}
-#quick-action-button-row button {
-    border-radius: 8px;
-    background-color: transparent;
-    font-size: 16px;
-    color: white;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
+button {
     padding: 10px;
-    font-family: 'Roboto Mono', monospace;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 40%;
-}
-#quick-action-button-row button:hover {
-    cursor: pointer;
-    color: rgb(160, 92, 224);
+    border-radius: 100px;
+    color: black;
     background-color: white;
-    font-weight: bold;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    border: none;
+    box-shadow: 3px 3px 10px 1px rgb(31, 31, 31);
+}
+button:hover {
+    color: #AA00FF;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px white;
+}
+button:active {
+    color: #AA00FF;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 0px 10px 1px white;
 }
 
-.content-container {
-    margin-left: 30px;
-    margin-right: 30px;
+/* Top Nav Bar */
+#top-nav-bar {
+    position: fixed;
+    background-color: rgba(19, 19, 19, 0.8);
+    backdrop-filter: blur(30px);
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    z-index: 10;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
-
-.info-section {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+#top-nav-bar label {
+    margin: 16px;
 }
-.info-section-heading {
-    font-size: 34px;
-    font-weight: bold;
+.nav-item {
+    padding: 10px;
+    border-radius: 100px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px 3px rgb(31, 31, 31);
 }
-
-#isobot-name-tag {
-    padding: 5px;
-    border-radius: 2.5px;
-    color: white;
-    background-color: rgb(160, 92, 224);
-    width: fit-content;
-    font-weight: bold;
+.nav-item:hover {
+    color: #AA00FF;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px #AA00FF;
 }
-#iso69-name-tag {
-    padding: 5px;
-    border-radius: 2.5px;
-    color: white;
-    background-color: rgb(0, 194, 97);
-    width: fit-content;
-    font-weight: bold;
+#top-nav-bar #title {
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
-#water-reminder-bot-name-tag {
-    padding: 5px;
-    border-radius: 2.5px;
-    color: white;
-    background-color: rgb(0, 192, 226);
-    width: fit-content;
-    font-weight: bold;
-}
-#isobot-name-tag:hover, #iso69-name-tag:hover, #water-reminder-bot-name-tag:hover {
+#top-nav-bar #title:hover {
     cursor: pointer;
 }
-
-.user-pfp-favicon {
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    box-shadow: 1px 0 4px 2px rgb(199, 199, 199);
+#top-nav-bar #invite-rd {
+    color: white;
+    background: linear-gradient(to bottom right, #AA00FF 0%, black 100%);
+    font-weight: bold;
 }
 
-.text-info-box {
-    margin: 15px;
-    padding: 20px;
-    background-color: rgb(108, 51, 161);
-    border-color: rgb(132, 63, 196);
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
-    font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
+/* Extra Eyecandy */
+.separator {
+    border-radius: 100px;
+    width: 100px;
+    background-color: white;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 10px 1px rgb(31, 31, 31);
 }
-
-#page-footer {
-    background-color: #232323;
+.python3-highlight {
+    background: linear-gradient(to bottom right, #306998 0%, #FFD43B 100%);
+    width: fit-content;
+    color: black;
+}
+.discord-highlight {
+    background-color: #5865F2;
+    width: fit-content;
     color: white;
+}
+.github-highlight {
+    background-color: #000000;
+    width: fit-content;
+    color: white;
+}
+.green-highlight {
+    background-color: green;
+    width: fit-content;
+    color: white;
+}
+.user-badge {
+    color: black;
+    background: white;
+    border-radius: 4px;
     font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 1px 0 10px 8px rgb(199, 199, 199);
+    padding: 1px;
+    margin: 1px;
 }
-
-.underline-accent {
-    height: 8px;
-    border-radius: 10px;
-    width: 120px;
-    background: linear-gradient(to right, rgb(160, 92, 224) 0%, rgb(108, 56, 156) 100%);
-    margin-top: 5px;
-    margin-left: 1px;
-}
-
-#social-media-links {
-    font-size: 26px;
-}
-#social-media-links i {
-    border-radius: 100%;
+.dev-badge {
     color: white;
-    background-color: #303030;
-    /* box-shadow: 1px 0 10px 1px rgb(199, 199, 199); */
-    padding: 15px;
+    background: #EB64A7;
+}
+.contributor-badge {
+    color: white;
+    background: #E87435;
+}
+#snipe {
+    color: white;
+    background: #7F2ACF;
+}
+#archisha {
+    color: white;
+    background: #04B45C;
+}
+#iusearchbtw {
+    background: #04E9E9;
+}
+#isobotdev {
+    color: white;
+    background: #AA00FF;
+}
+#iso69dev {
+    color: white;
+    background: #10C068;
+}
+#archbotdev {
+    color: white;
+    background: #1081C1;
+}
+#dumbass {
+    color: white;
+    background: #CAA216;
+}
+#mafsguy {
+    color: white;
+    background: #090985;
+}
+
+/* Main Page Content */
+.jap {
+    font-family: 'Noto Serif JP', serif;
+}
+#page-content-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.item-card {
+    background-color: rgb(26, 26, 26);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 15px rgb(10, 10, 10); /* rgb(100, 100, 233) rgb(27, 27, 199)*/ 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#heading-card {
+    background: linear-gradient(to right, #AA00FF 0%, #55FF00 50%, #00FFFF 100%);
+}
+#heading-card img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+#heading-card #title {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#heading-card #jap-title {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#heading-card #subtitle {
+    font-size: 21px;
+}
+#heading-card #invite-button {
+    width: 100%;
+    margin-top: 20px;
+}
+#why-to-use-card {
+    text-align: left;
+}
+#why-to-use-card #title {
+    font-size: 40px;
+    font-weight: 800;
+    background: #AA00FF;
+}
+#why-to-use-card .subtitle {
+    font-size: 32px;
+    font-weight: bold;
+}
+#invite-card-end #title {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#invite-card-end #invite-button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/* Footer */
+#footer {
+    margin-top: 75px;
+    background-color: rgb(19, 19, 19);
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 8px rgb(10, 10, 10);
 }
