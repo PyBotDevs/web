@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YAToDB</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="resources/nka_white.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <noscript>This app requires JavaScript to function. Please enable it in your browser settings.</noscript>
+    <body>
+        <div id="top-nav-bar">
+            <label id="title">NKA</label>
+            <label class="nav-item" id="github-rd" onclick="rd('git')">Our Projects</label>
+            <label class="nav-item" id="isobot-rd" onclick="rd('isobot')">isobot</label>
+            <label class="nav-item" id="yatodb-rd" onclick="rd('yatodb')">YAToDB</label>
+            <label class="nav-item" id="iso6-9-rd" onclick="rd('iso6.9')">iso6.9</label>
+            <label class="nav-item" id="skyblockpy-rd" onclick="rd('skyblockpy')">SkyblockPy</label>
+            <label class="nav-item" id="codebot-rd" onclick="rd('codebot')">CodeBot</label>
+            <label class="nav-item" id="discord-rd" onclick="rd('server')">Discord Server</label>
+        </div>
+        <br><br><br>
+        <center>
+            <div id="page-content-container">
+                <div class="item-card" id="heading-card">
+                    <img src="resources/nka_white.png">
+                    <br>
+                    <label id="title">NKA</label>
+                    <br>
+                    <label class="jap" id="jap-title">Python開発組織</label>
+                    <div class="separator"></div>
+                    <p id="subtitle">We are a development team, we code in Python. We make Discord bots, and occasionally other Python/web related projects.</p>
+                    <button id="invite-button" onclick="rd('git')">Check out our projects!</button>
+                </div>
+                <br>
+                <div class="item-card" id="why-to-use-card">
+                    <label id="title">About us<br><div class="separator"></div></label>
+                    <br>
+                    <label class="subtitle">What do we do?</label>
+                    <p>
+                        We create various types of Discord bots, including moderating bots, economical bots, and more. Feel free to submit your ideas via head members' Discord!
+                    </p>
+                    <br>
+                    <label class="subtitle">> Our most popular bots</label>
+                    <p>
+                        <ul>
+                            <li><a href="https://github.com/PyBotDevs/isobot">isobot</a></li>
+                            <li><a href="https://github.com/PyBotDevs/iso6.9">iso6.9</a></li>
+                            <li><a href="https://github.com/PyBotDevs/yatodb">YAToDB</a></li>
+                        </ul>
+                    </p>
+                    <br>
+                    <label class="subtitle">> Our rules</label>
+                    <p>
+                        <ul>
+                            <li><b>Reduce, Reuse, and Rewrite</b> - notsniped</li>
+                            <li><b>Recreate, Recycle, and Refine</b> - archisa69</li>
+                            <li><b>Rebuild, Refresh, and Reinforce</b> - thatOneArchUser</li>
+                        </ul>
+                    </p>
+                    <br>
+                    <label class="subtitle">> Head members</label>
+                    <p>
+                        <ul>
+                            <li>notsniped <label class="user-badge" id="snipe">SNIPE</label> <label class="user-badge dev-badge">DEV</label> <label class="user-badge" id="isobotdev">isobot dev</label> <label class="user-badge contributor-badge">Contributor</label> <label class="user-badge" id="dumbass">dumbass who goes to school</label></li>
+                            <li>archisa69 <label class="user-badge" id="archisha">Archisha</label> <label class="user-badge dev-badge">DEV</label> <label class="user-badge" id="iso69dev">iso6.9 dev</label> <label class="user-badge contributor-badge">Contributor</label> <label class="user-badge" id="chess">♟️ chess</label></li>
+                            <li>hairyballtheorem <label class="user-badge" id="iusearchbtw">i use arch btw</label> <label class="user-badge dev-badge">DEV</label> <label class="user-badge" id="archbotdev">archbot dev</label> <label class="user-badge contributor-badge">Contributor</label> <label class="user-badge" id="mafsguy">mafs guy</label></li>
+                        </ul>
+                    </p>
+                    <br><br>
+                    <label id="title">About our repositories<br><div class="separator"></div></label>
+                    <br>
+                    <label class="subtitle">> Having problems?</label>
+                    <p>
+                        Feel free to ask via creating an issue in repositories or ask directly in Discord!
+                    </p>
+                    <br>
+                    <label class="subtitle">> Experienced bugs and glitches?</label>
+                    <p>
+                        Report them on certain repositories by creating issues!
+                    </p>
+                    <br>
+                </div>
+                <br>
+                <div class="item-card" id="invite-card-end">
+                    <label id="title">Invite isobot to your server!</label>
+                    <br>
+                    <button id="invite-button" onclick="rd('isobot-invite')">Add To Your Discord Server!</button>
+                </div>
+            </div>
+        </center>
+        <div id="footer">YAToDB &copy; NKA 2022-present | This page is open-source, licensed with GPL-3.0, and hosted on GitHub. | i use arch btw</div>
+    </body>
+    <script src="main.js"></script>
+</html>
